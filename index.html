@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Sarmento | Software Engineer</title>
+  <meta name="description" content="I develop web applications that amaze your users.">
+
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="page">
+    <a href="#">
+      <img class="logo" src="./assets/logo.jpg" alt="Eduardo Sarmento">
+    </a>
+
+    <a href="#menu" class="mobile-only">
+      <img class="menu-icon" src="./assets/icons/menu.svg" alt="Open menu">
+    </a>
+
+    <nav id="menu">
+      <a href="#page" class="mobile-only">
+        <img  src="./assets/icons/x-mark.svg" alt="Close menu">
+      </a>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <span class="block">I'm a</span>
+    <span class="big-text">SOFTWARE<br>ENGINEER</span>
+    <span class="block">based in 
+      <span id="temperature"></span>
+      Natal, Brazil.
+    </span>
+    
+    <div class="description">
+      <em>Technology is changing the world and I am writing this change.</em>
+      <strong>I'm open for frontend and full stack opportunities.</strong>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <div class="content">
+        <div class="header-row">
+          <h2>About me</h2>
+          <a href="https://drive.google.com/file/d/1eRL34_d50VnspyLpNm2K0cyO9ee2rsD0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="small-button">
+              <img src="assets/icons/file.svg" alt="Resume">
+            </div>
+          </a>
+        </div>
+        
+        <p>I've worked with web, mobile, and game development in areas such as education, health, investments, and compliance. I also worked as a teaching assistant and as a support engineer, which made me develop good communication skills.</p>
+        <p>Now, I'm specializing in frontend development using React, but I'm not attached to the tools, I just want to create softwares that make me feel relevant.</p>
+        <p>If you want to check my full resume, click the paper sheet icon above.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <img src="assets/project-1.jpg" alt="Homepage of a fashion e-commerce">
+
+        <div class="content">
+          <h3>CRWN Clothing</h3>
+          <p>
+            A fashion e-commerce application developed with <strong>React</strong>.
+            User authentication was implemented with <strong>Firebase</strong>.
+            The checkout has integration with <strong>Stripe</strong> to simulate payment.
+            State is handled using <strong>Redux</strong> and persists if you refresh the page.
+          </p>
+          
+          <div class="button-row">
+            <a
+              class="button primary"
+              href="https://crwn-clothing-edu.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open live demo
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/edusrmt/crwn-clothing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Go to GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <img src="assets/project-2.jpg" alt="Blog with some posts and a search bar">
+
+        <div class="content">
+          <h3>GitHub Blog</h3>
+          <p>
+            A blog that turns the issues from its repository into posts, 
+            connecting to <strong>GitHub API</strong> with <strong>Axios</strong>.
+            <strong>Markdown</strong> elements inside the post are interpreted.
+            It was developed with <strong>React</strong> and <strong>TypeScript</strong>.
+          </p>
+          
+          <div class="button-row">
+            <a
+              class="button primary"
+              href="https://gitblog-edu.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open live demo
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/edusrmt/github-blog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Go to GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <img src="assets/project-3.jpg" alt="Documentation page of a button component">
+
+        <div class="content">
+          <h3>Ignite UI</h3>
+          <p>
+            A design system made with <strong>Storybook</strong> 
+            and implemented with <strong>React</strong> and <strong>TypeScript</strong>. 
+            I used <strong>Stitches</strong> for CSS-in-JS
+            and some components were built over Radix UI</strong> components. 
+            <strong>Turborepo</strong> was used to manage the monorepo more efficiently.
+          </p>
+          
+          <div class="button-row">
+            <a
+              class="button primary"
+              href="https://edusrmt.github.io/design-system/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open live demo
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/edusrmt/design-system"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Go to GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <h2>Contact me</h2>
+
+        <div class="content">
+          <div class="message">
+            <p>I can help turning your company's objectives into achievements.</p>
+            <p>Don't be shy to send a message! ;D</p>
+          </div>
+    
+          <div class="contact-links">
+            <a href="mailto:cealvesarmento@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="small-button">
+                <img src="assets/icons/email.svg" alt="Email">
+              </div>
+              <span>cealvesarmento@gmail.com</span>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/edu-sarmento" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="small-button">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+              </div>
+              <span>/edu-sarmento</span>
+            </a>
+    
+            <a href="https://github.com/edusrmt" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="small-button">
+                <img src="assets/icons/github.svg" alt="GitHub">
+              </div>
+              <span>/edusrmt</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2023 Eduardo Sarmento</span>
+
+    <div class="footer-actions">
+      <a href="#">
+        <div class="small-button mobile-only">
+          <img src="assets/icons/arrow.svg" alt="Return to the top">
+        </div>
+      </a>
+      
+      <div class="button-row">
+        <a href="https://drive.google.com/file/d/1eRL34_d50VnspyLpNm2K0cyO9ee2rsD0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <div class="small-button">
+            <img src="assets/icons/file.svg" alt="Resume">
+          </div>
+        </a>
+  
+        <a href="https://www.linkedin.com/in/edu-sarmento" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <div class="small-button">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+          </div>
+        </a>
+  
+        <a href="https://github.com/edusrmt" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <div class="small-button">
+            <img src="assets/icons/github.svg" alt="GitHub">
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./weather.js"></script>
+</body>
+</html>
