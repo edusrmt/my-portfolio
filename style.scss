@@ -173,8 +173,7 @@ header {
       width: 100%;
       height: 100vh;
       padding: 30px $page-margin;
-      overflow-x: visible;
-      overflow-y: scroll;
+      overflow: hidden;
 
       background-color: #FFF;
       border-left: 4px solid #000;
